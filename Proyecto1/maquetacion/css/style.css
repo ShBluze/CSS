@@ -34,6 +34,7 @@ img {
     /* border: 2px solid; */
     height: 150px;
     width: 150px;
+ 
 }
 
 
@@ -100,11 +101,63 @@ li {
     font-size: 14px;
     color: white;
     user-select: none;
+
     
 }
 
 li:hover{
     background-color: black;
-    transition: all 1s ease-in-out;
+    transition: all 400ms;
+    /* transition: all 1s ease; */
     cursor: pointer;
 }
+
+
+
+#barra > #lista >li:hover{
+    background-color: #70b231;
+    box-shadow: 0px 0px 4px green inset;
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* menu desplegable */
+
+#barra > #lista > li > ul {
+    display: none;
+    position: absolute;
+    list-style: none;
+    right: 20px;
+    top: 65px;
+    height: 50px;
+    width: 100px;
+    /* width: 160px; */
+    /* box-shadow: 0px 2px 2px gray; */
+    z-index: 1;
+}
+
+
+#barra > #lista >li:hover > ul{
+    display: block;
+
+}
+
+#barra > #lista > li:hover > ul > li{
+    background-color: black;
+    border-bottom: 1px solid #D6D6D6;
+    line-height: 25px;
+    font-size: 13px;
+    text-align: justify;
+    transition: all 400ms ease;
+}
+
+
+
+
+#barra > #lista > li > ul > li:hover{
+    color: white;
+    background-color: #70b231;
+    
+}
+
