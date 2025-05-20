@@ -14,8 +14,9 @@
 body {
     border: 2px solid;
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
+    padding: 0 auto;
+    height: 1400px;
 }
 
 
@@ -110,7 +111,6 @@ li:hover {
 
 
 /* ----------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
 /* menu desplegable */
 
 #barra>#lista>li>ul {
@@ -147,4 +147,34 @@ li:hover {
 #barra>#lista>li>ul>li:hover {
     color: white;
     background-color: #70b231;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------- */
+/* menu lateral */
+
+
+aside{
+    margin: 50px;
+    border: 2px solid;
+    padding: 20px;
+    width: 200px;
+    height: 800px;
+}
+
+.contenedor1{
+    gap: 5px;
+    /* border: 2px solid; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* text-align: center; */
+}
+
+.contenedor1>form>input{
+
+    text-align: center;
+    /* line-height: 20px; */
+    
+    
 }
