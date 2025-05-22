@@ -152,16 +152,19 @@ h1:hover {
 /* ------------------------------------------------------------------------------------------------------------------------- */
 /* menu lateral */
 
+aside{
+    height: 2000px auto;
+}
 
-aside {
+#aside1 {
     user-select: none;
     font-size: 16px;
     background-color: white;
-    margin: 50px;
+    margin: 20px;
     /* border: 2px solid; */
     padding: 20px;
     width: 200px;
-    height: 1000px;
+    height: 820px;
 }
 
 
@@ -243,18 +246,22 @@ aside {
 }
 
 
-.aside2 {
+
+div.aside2{
+    background-color: #333333;
     display: flex;
+ justify-content: center;
+}
+
+.aside2 {
     height: 90px;
     width: 200px;
     /* margin: 50px; */
     background-color: white;
     font-size: 16px;
-    display: flex;
-    flex-direction: column;
     /* border: 2px solid; */
     /* padding: 20px; */
-    overflow: hidden;
+
     /* margin: 0px; */
 }
 
@@ -276,7 +283,13 @@ aside {
 /* -----------------------------------------------------------------------------------------------------------------------------------------------------------
                     secciones*/
 
+body>.main-container{
+    height: 0 auto;
+}
+
 .main-container{
+    border: 2px solid;
+    height: 0px auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
